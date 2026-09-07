@@ -1,0 +1,32 @@
+# Library Management System
+
+This is a simple library management system that I’m building with Java.
+
+I’m mainly using this project to practice Java and object-oriented programming. The system will allow users to manage books and members and handle borrowing and returning books.
+
+## Features
+
+* Manage books
+* Manage members
+* Borrow and return books
+* Console-based menu
+
+## Technologies
+
+* Java
+* Object-Oriented Programming
+
+## Project Status
+
+🚧 In progress
+
+The Book, Member, and Library classes are completed. I’m currently working on the main menu and the remaining library operations.
+
+## What I'm Practicing
+
+* Classes and objects
+* Encapsulation
+* Constructors and methods
+* ArrayList
+* Object-oriented programming
+* User input with Scanner
