@@ -179,9 +179,11 @@ public class Main {
                             System.out.println("Please enter the member id:");
                             String borrowingMemberId = scanner.next();
 
-                            library.giveBook(borrowingBookId, borrowingMemberId);
+                            boolean borrowed = library.giveBook(borrowingBookId, borrowingMemberId);
 
-                            System.out.println("Book borrowed successfully.");
+                            if (borrowed) {
+                                System.out.println("Book borrowed successfully.");
+                            }
                             break;
                         case 2 :
                             System.out.println("Please enter the book id:");
@@ -191,8 +193,12 @@ public class Main {
                             System.out.println("Please enter the member id:");
                             String returnMemberId = scanner.next();
 
-                            library.receiveBook(returnBookId, returnMemberId);
-                            System.out.println("Book returned successfully.");
+                            boolean returned = library.receiveBook(returnBookId, returnMemberId);
+
+                            if (returned) {
+                                System.out.println("Book returned successfully.");
+                            }
+                            
                             break;
                         case 3:
                             System.out.println("Back to main menu.");

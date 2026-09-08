@@ -16,7 +16,7 @@ public class Library {
         boolean isExist = false;
         for(Member member: this.members) {
 
-            if(member.id == id) {
+            if(member.id.equals(id)) {
 
                 isExist = true;
             }
@@ -25,28 +25,50 @@ public class Library {
 
     }
 
-    public void giveBook(String bookId, String memberId) {
+    public boolean giveBook(String bookId, String memberId) {
 
         Book book = this.getBookById(bookId);
+
+        if(book == null) {
+            System.out.println("Book not found.");
+            return false;
+        }
         this.books.remove(book);
 
         Member member = this.getMemberById(memberId);
+
+        if(member == null) {
+            System.out.println("Member not found.");
+            return false;
+        }
         int memberIndex = this.getMemberIndex(member);
         this.members.get(memberIndex).borrowedBooks.add(book);
 
 
-        
+        return true;
     }
 
-    public void receiveBook(String bookId, String memberId) {
-
-        Book book = this.getBorrowedBookById(bookId, memberId);
-        this.books.add(book);
+    public boolean receiveBook(String bookId, String memberId) {
 
         Member member = this.getMemberById(memberId);
+
+        if(member == null) {
+            System.out.println("Member not found.");
+            return false;
+        }
+
+        Book book = this.getBorrowedBookById(bookId, memberId);
+
+        if(book == null) {
+            System.out.println("Book not found.");
+            return false;
+        }
+
+        this.books.add(book);
+
         int memberIndex = this.getMemberIndex(member);
         this.members.get(memberIndex).borrowedBooks.remove(book);
-        
+        return true;
     }
 
     
