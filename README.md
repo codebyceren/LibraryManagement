@@ -14,8 +14,9 @@ The program allows users to add and search for books and members, borrow books, 
 * Search for a member by ID
 * Borrow a book
 * Return a book
-* Basic input validation
-* Error messages for invalid book or member IDs
+* Input validation
+* Error handling
+* System testing
 
 ## Technologies
 
