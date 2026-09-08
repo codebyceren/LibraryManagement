@@ -20,7 +20,8 @@ I’m mainly using this project to practice Java and object-oriented programming
 
 🚧 In progress
 
-The Book, Member, and Library classes are completed. I’m currently working on the main menu and the remaining library operations.
+The main library features are completed, including book management, member management, borrowing and returning books, and the console-based main menu.
+I’m currently improving input validation and error handling.
 
 ## What I'm Practicing
 
