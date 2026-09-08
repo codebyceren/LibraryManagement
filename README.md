@@ -18,10 +18,16 @@ I’m mainly using this project to practice Java and object-oriented programming
 
 ## Project Status
 
-🚧 In progress
-
-The main library features are completed, including book management, member management, borrowing and returning books, and the console-based main menu.
-I’m currently improving input validation and error handling.
+✅ Completed
+The Library Management System is complete.
+The project includes:
+Book management
+Member management
+Borrowing and returning books
+Console-based menu system
+Input validation and error handling
+System testing
+The application was developed in Java using object-oriented programming principles.
 
 ## What I'm Practicing
 
