@@ -1,44 +1,63 @@
 # Library Management System
 
-This is a simple library management system that I’m building with Java.
+A simple console-based library management system I built with Java to practice object-oriented programming.
 
-I’m mainly using this project to practice Java and object-oriented programming. The system will allow users to manage books and members and handle borrowing and returning books.
+The program allows users to add and search for books and members, borrow books, and return them through a simple console menu.
 
 ## Features
 
-* Manage books
-* Manage members
-* Borrow and return books
-* Console-based menu
+* Add books
+* List all books
+* Search for a book by ID
+* Add members
+* List all members
+* Search for a member by ID
+* Borrow a book
+* Return a book
+* Basic input validation
+* Error messages for invalid book or member IDs
 
 ## Technologies
 
 * Java
+* ArrayList
+* Scanner
 * Object-Oriented Programming
+
+## Project Structure
+
+The project is organized into a few Java classes:
+
+* Book.java — stores book information
+* Member.java — stores member information and borrowed books
+* Library.java — manages books, members, borrowing and returning
+* Main.java — handles the console menu and user input
+
+## What I Practiced
+
+While working on this project, I practiced:
+
+* Creating classes and objects
+* Constructors and methods
+* Working with ArrayList
+* Managing relationships between classes
+* Using Scanner for user input
+* Searching objects by ID
+* Input validation
+* Basic error handling
+* Using Git and GitHub
 
 ## Project Status
 
 ✅ Completed
 
-The Library Management System is complete.
+The main features of the library management system have been implemented and tested.
 
-The project includes:
+## Future Improvements
 
-* Book management
-* Member management
-* Borrowing and returning books
-* Console-based menu system
-* Input validation and error handling
-* System testing
+I may improve the project later by adding:
 
-The application was developed in Java using object-oriented programming principles.
-
-
-## What I'm Practicing
-
-* Classes and objects
-* Encapsulation
-* Constructors and methods
-* ArrayList
-* Object-oriented programming
-* User input with Scanner
+* Saving data to files
+* Better input handling
+* More information for books and members
+* A more detailed menu system
