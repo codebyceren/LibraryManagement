@@ -40,7 +40,7 @@ public class Library {
 
     public void receiveBook(String bookId, String memberId) {
 
-        Book book = this.getBookById(bookId);
+        Book book = this.getBorrowedBookById(bookId, memberId);
         this.books.add(book);
 
         Member member = this.getMemberById(memberId);
@@ -80,6 +80,18 @@ public class Library {
         }
         return null;
     }
-    
+
+    private Book getBorrowedBookById(String bookId, String memberId) {
+        Member member = this.getMemberById(memberId);
+
+        for(Book book : member.borrowedBooks) {
+
+            if(book.id.equals(bookId)) {
+                    return book;
+            }
+        }
+        
+        return null;
+    }
 
 }
