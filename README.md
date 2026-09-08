@@ -27,7 +27,7 @@ The program allows users to add and search for books and members, borrow books, 
 
 ## Project Structure
 
-The project is organized into a few Java classes:
+The project is organized into a few simple Java classes:
 
 * Book.java — stores book information
 * Member.java — stores member information and borrowed books
